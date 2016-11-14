@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+/*BODY AND MAIN*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: grey;
+    
+}
+
+main {
+    /*background: url("../img/todolist.jpg") no-repeat center center fixed;*/
+    width: 1000px;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Header and title*/
+
+header {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    height: 140px;
+    background-color: black;
+  
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: red;
+    font-size: 50px;
+    font-style: bold;
+    font-family: "Arial";
+}
+
+/*SECTION ONE WITH CONTENT*/
+
+.sec-one {
+    width: 100%; 
+    height: 60px;
+    margin-top: 20px;
+    background-color: black;
+    border: 1px solid green;
+}
+
+.input-div {
+    margin-right: auto;
+    margin-left: auto;
+   /* border: 1px solid green;*/
+}
+
+.input {
+  display: inline-block;
+  width: 800px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: red;
+
+}
+
+.btnAdd {
+  
+}
+
+/*
+SECTION TWO WITH CONTENT*/
+
+.sec-two {
+    margin-top: 20px;
+    width: 100%;
+    height:300px; /*change to auto later!!!*/
+    border: 1px solid green;
+    background-color: black;
+
+}
+
+.myUL {
+    color: red;
+    font-size: 20px;
+}
+
+.input2 {
+  display: inline-block;
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 20px;
+  
+
+}
