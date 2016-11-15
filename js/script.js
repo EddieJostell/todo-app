@@ -45,7 +45,7 @@ function deleteButton(li) {
     var delBtn = document.createElement("BUTTON");
     var delTxt = document.createTextNode("Delete");
     delBtn.appendChild(delTxt);
-   /* delBtn.id = "btnDelete";*/
+    delBtn.id = "btnDelete";
     li.appendChild(delBtn);
     delBtn.addEventListener("click", deleteTask);
 
