@@ -1,20 +1,83 @@
-/*
-var myButton = document.createElement("BUTTON");
 
-var myText = document.createTextNode("CLICK ME");
+function newTask() {
 
-myButton.appendChild(myText);
+    //Skapar en ny task från vad man skrev i textrutan.
+    
+    var inputValue = document.getElementById("myInput").value;
+    var textWritten = document.createTextNode("TO DO! " + inputValue);
+    var li = document.createElement("li");
 
-document.body.appendChild(myButton);
+    li.appendChild(textWritten);
+    if (inputValue === "") {
+        alert("You have to write something!");
+    }
+    else {
 
-myButton.addEventListener('dblclick', function() {
-    document.body.style.backgroundColor = "red";
-});*/
+        document.getElementById("myUL").appendChild(li);
+    }
 
-var myInput = document.getElementById("input");
+    document.getElementById("myInput").value = "";
 
-var myBtn = document.getElementById("btnAdd");
+ /*   var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);*/
 
-myBtn.addEventListener("click", function() {
-    document.myInput.innerHTML = "I AM THE BEST AROUND!";
-});
+    deleteButton(li);
+
+   /* var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);*/
+
+    doneButton(li);
+    
+
+}
+
+
+
+// SKAPA EN DELETE KNAPP FÖR EN TASK
+function deleteButton(li) {
+
+    var delBtn = document.createElement("BUTTON");
+    var delTxt = document.createTextNode("Delete");
+    delBtn.appendChild(delTxt);
+   /* delBtn.id = "btnDelete";*/
+    li.appendChild(delBtn);
+    delBtn.addEventListener("click", deleteTask);
+
+}
+
+// TA BORT EN TASK MED DELETE KNAPPEN
+function deleteTask() {
+    this.parentNode.parentNode.removeChild(this.parentNode);
+}
+
+// SKAPA EN DONE KNAPP FÖR EN TASK
+function doneButton(li) {
+    var doneBtn = document.createElement("BUTTON");
+    var doneTxt = document.createTextNode("Done");
+    doneBtn.appendChild(doneTxt);
+    li.appendChild(doneBtn);
+    doneBtn.id = "btnDone";
+    doneBtn.addEventListener("click", taskDone);
+
+}
+// SKICKA EN FÄRDIG TASK TILL TASK DONE LISTAN.
+function taskDone() {
+    var newText = this.parentNode.parentNode.children;
+    var removeDoneBtn = document.getElementById("btnDone"); 
+    removeDoneBtn.remove();
+    var ulDone = document.getElementById("myDoneUL");
+    ulDone.appendChild(newText[0]);
+    console.log("WORKING?");
+}
+
+
+document.getElementById("btnAdd").addEventListener("click", newTask);
+
+
+
