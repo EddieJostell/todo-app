@@ -101,10 +101,14 @@ SECTION TWO WITH CONTENT*/
  display: inline-block;
  width: 400px;
  height: auto;
+/* border: 1px solid black;*/
+ margin-left: 120px;
 }
 
 .doneList {
-display: inline-block;
+ position: absolute;
+ display: inline-block;
+ margin-left: 20px;
  width: 400px;
- 
+ /*border: 1px solid black;*/
 }

@@ -5,6 +5,7 @@ function newTask() {
     
     var inputValue = document.getElementById("myInput").value;
     var textWritten = document.createTextNode("TO DO! " + inputValue);
+ 
     var li = document.createElement("li");
 
     li.appendChild(textWritten);
