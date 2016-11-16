@@ -8,6 +8,7 @@ function newTask() {
  
     var li = document.createElement("li");
     li.style.color = "red";
+    li.style.wordWrap = "break-word";
     li.appendChild(textWritten);
     if (inputValue === "") {
         alert("You have to write something!");
@@ -72,6 +73,7 @@ function taskDone() {
     var newText = this.parentNode.parentNode.children;
     var ulDone = document.getElementById("myDoneUL");
     ulDone.appendChild(this.parentNode);
+    this.parentNode.style.textDecoration = "line-through";
     this.parentNode.removeChild(this);
     
 
