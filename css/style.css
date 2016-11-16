@@ -62,11 +62,11 @@ h1 {
 }
 
 #myInput {
-  display: inline-block;
-  width: 600px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    display: inline-block;
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*
@@ -85,16 +85,16 @@ SECTION TWO WITH CONTENT*/
 
 
 .todoList {
- display: inline-block;
- width: 400px;
- height: auto;
- margin-left: 120px;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin-left: 120px;
 }
 
 .doneList {
- position: absolute;
- display: inline-block;
- margin-left: 20px;
- width: 400px;
- height: auto;
+    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    width: 400px;
+    height: auto;
 }
