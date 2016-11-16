@@ -13,7 +13,6 @@ html,body {
 }
 
 main {
-    /*background: url("../img/todolist.jpg") no-repeat center center fixed;*/
     width: 1000px;
     height: 100%;
     border: 1px solid black;
@@ -28,7 +27,7 @@ header {
     text-align: center;
     width: 100%;
     height: 140px;
-    background-color: mediumaquamarine;
+    background-color: black;
   
 }
 
@@ -42,7 +41,6 @@ header h1 {
 
 h1 {
     color: red;
-    /*text-align: center;*/
     font-size: 30px;
     font-style: bold;
     font-family: "Arial";
@@ -55,14 +53,12 @@ h1 {
     width: 100%; 
     height: 60px;
     margin-top: 20px;
-    background-color: mediumaquamarine;
-    border: 1px solid green;
+    background-color: black;
 }
 
 .input-div {
     margin-right: auto;
     margin-left: auto;
-   /* border: 1px solid green;*/
 }
 
 #myInput {
@@ -71,12 +67,6 @@ h1 {
   margin-left: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
-  /*background-color: red;*/
-
-}
-
-#btnAdd {
-  
 }
 
 /*
@@ -85,15 +75,12 @@ SECTION TWO WITH CONTENT*/
 .sec-two {
     margin-top: 20px;
     width: 100%;
-    height:100%; /*change to auto later!!!*/
-    border: 1px solid green;
-    background-color: mediumaquamarine;
-
+    height:100%;
+    background-color: black;
 }
 
 .myUL {
-    color: red;
-    
+    color: red;   
 }
 
 
@@ -101,7 +88,6 @@ SECTION TWO WITH CONTENT*/
  display: inline-block;
  width: 400px;
  height: auto;
-/* border: 1px solid black;*/
  margin-left: 120px;
 }
 
@@ -110,5 +96,5 @@ SECTION TWO WITH CONTENT*/
  display: inline-block;
  margin-left: 20px;
  width: 400px;
- /*border: 1px solid black;*/
+ height: auto;
 }

@@ -4,10 +4,10 @@ function newTask() {
     //Skapar en ny task från vad man skrev i textrutan.
     
     var inputValue = document.getElementById("myInput").value;
-    var textWritten = document.createTextNode("TO DO! " + inputValue);
+    var textWritten = document.createTextNode(inputValue);
  
     var li = document.createElement("li");
-
+    li.style.color = "red";
     li.appendChild(textWritten);
     if (inputValue === "") {
         alert("You have to write something!");
@@ -19,19 +19,19 @@ function newTask() {
 
     document.getElementById("myInput").value = "";
 
- /*   var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode(" ");
     span.className = "close";
     span.appendChild(txt);
-    li.appendChild(span);*/
+    li.appendChild(span);
 
     deleteButton(li);
 
-   /* var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode(" ");
     span.className = "close";
     span.appendChild(txt);
-    li.appendChild(span);*/
+    li.appendChild(span);
 
     doneButton(li);
     
@@ -70,12 +70,15 @@ function doneButton(li) {
 // SKICKA EN FÄRDIG TASK TILL TASK DONE LISTAN.
 function taskDone() {
     var newText = this.parentNode.parentNode.children;
-    var removeDoneBtn = document.getElementById("btnDone"); 
-    removeDoneBtn.remove();
     var ulDone = document.getElementById("myDoneUL");
-    ulDone.appendChild(newText[0]);
-    console.log("WORKING?");
+    ulDone.appendChild(this.parentNode);
+    this.parentNode.removeChild(this);
+    
+
+    
 }
+
+
 
 
 document.getElementById("btnAdd").addEventListener("click", newTask);
