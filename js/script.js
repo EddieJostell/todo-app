@@ -1,7 +1,7 @@
 
 function newTask() {
 
-    //Skapar en ny task från vad man skrev i textrutan.
+    //Create a new task from what input you give the textfield.
     
     var inputValue = document.getElementById("myInput").value;
     var textWritten = document.createTextNode(inputValue);
@@ -41,7 +41,7 @@ function newTask() {
 
 
 
-// SKAPA EN DELETE KNAPP FÖR EN TASK
+// Create a delete button for a task.
 function deleteButton(li) {
 
     var delBtn = document.createElement("BUTTON");
@@ -53,12 +53,12 @@ function deleteButton(li) {
 
 }
 
-// TA BORT EN TASK MED DELETE KNAPPEN
+// Remove a task with the delete button.
 function deleteTask() {
     this.parentNode.parentNode.removeChild(this.parentNode);
 }
 
-// SKAPA EN DONE KNAPP FÖR EN TASK
+//Create a done button for a created task
 function doneButton(li) {
     var doneBtn = document.createElement("BUTTON");
     var doneTxt = document.createTextNode("Done");
@@ -68,7 +68,7 @@ function doneButton(li) {
     doneBtn.addEventListener("click", taskDone);
 
 }
-// SKICKA EN FÄRDIG TASK TILL TASK DONE LISTAN.
+//Send a complete task to the done list.
 function taskDone() {
     var newText = this.parentNode.parentNode.children;
     var ulDone = document.getElementById("myDoneUL");
