@@ -68,7 +68,7 @@ function doneButton(li) {
     doneBtn.addEventListener("click", taskDone);
 
 }
-//Send a complete task to the done list.
+//Send a complete task to the done list and remove the done button.
 function taskDone() {
     var newText = this.parentNode.parentNode.children;
     var ulDone = document.getElementById("myDoneUL");
