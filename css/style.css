@@ -8,14 +8,14 @@ html,body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background: black;
+    background: #8d99ae;
     
 }
 
 main {
     width: 1000px;
     height: 100%;
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,28 +23,157 @@ main {
 /*Header and title*/
 
 header {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     text-align: center;
     width: 100%;
     height: 140px;
-    background-color: black;
+    background-color: #2b2d42;
   
 }
 
 header h1 {
     margin-bottom: 10px;
-    color: red;
+    color: #ef233c;
     font-size: 50px;
     font-style: bold;
-    font-family: "Arial";
+    font-family: "Agency FB";
 }
 
 h1 {
-    color: red;
+    color: #ef233c;
     font-size: 30px;
     font-style: bold;
-    font-family: "Arial";
+    font-family: "Agency FB";
 }
+
+/* Add Task button*/
+
+#btnAdd {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+#btnAdd:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+#btnAdd:active {
+	position:relative;
+	top:1px;
+}
+
+#btnDelete {
+   -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#edf2f4;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+
+}
+
+#btnDelete:hover {
+   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+
+#btnDelete:active {
+    position:relative;
+	top:1px;
+}
+
+#btnDone {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+	background:-moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+	background:-webkit-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+	background:-o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+	background:-ms-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811',GradientType=0);
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#edf2f4;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+#btnDone:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+	background:-moz-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+	background:-webkit-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+	background:-o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+	background:-ms-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a',GradientType=0);
+	background-color:#5cb811;
+}
+#btnDone:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 /*SECTION ONE WITH CONTENT*/
@@ -53,7 +182,7 @@ h1 {
     width: 100%; 
     height: 60px;
     margin-top: 20px;
-    background-color: black;
+    background-color: #2b2d42;
 }
 
 .input-div {
@@ -76,11 +205,11 @@ SECTION TWO WITH CONTENT*/
     margin-top: 20px;
     width: 100%;
     height:100%;
-    background-color: black;
+    background-color: #2b2d42;
 }
 
 .myUL {
-    color: red;   
+    color: #d90429; 
 }
 
 li {

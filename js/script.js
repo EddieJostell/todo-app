@@ -5,9 +5,11 @@ function newTask() {
     
     var inputValue = document.getElementById("myInput").value;
     var textWritten = document.createTextNode(inputValue);
- 
+    
     var li = document.createElement("li");
-    li.style.color = "red";
+    li.style.color = "#d90429";
+    li.style.fontFamily = "Agency FB";
+    li.style.listStyleType = "none";
     li.style.wordWrap = "break-word";
     li.appendChild(textWritten);
     if (inputValue === "") {
